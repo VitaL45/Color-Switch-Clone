@@ -54,6 +54,7 @@ public class BallColor : MonoBehaviour
                 SetRandomColor(); 
             }
             Destroy(other.gameObject);
+            Debug.Log("Hello World");
             return;
         }
     }
