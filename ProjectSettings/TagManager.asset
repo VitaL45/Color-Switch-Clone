@@ -9,6 +9,7 @@ TagManager:
   - Blue
   - Yellow
   - ColorChanger
+  - Star
   layers:
   - Default
   - TransparentFX
