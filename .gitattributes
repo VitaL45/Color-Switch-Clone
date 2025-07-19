@@ -3,3 +3,5 @@
 *.shader linguist-vendored
 *.hlsl linguist-vendored
 Assets/Shaders/* linguist-vendored
+Assets/Materials/* linguist-vendored
+Assets/PostProcessing/* linguist-vendored
