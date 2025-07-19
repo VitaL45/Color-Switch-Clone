@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class BallColor : MonoBehaviour
 {
     SpriteRenderer sr;
-    private int score = 0;
+    public static int score = 0;
     public string currentColor;
     public Color Yellow, Purple, Red, Blue;
     public TMP_Text scoreText;
