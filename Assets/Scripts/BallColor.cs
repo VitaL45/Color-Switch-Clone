@@ -67,6 +67,7 @@ public class BallColor : MonoBehaviour
             score++;
             scoreText.text = score.ToString();
             Destroy(other.gameObject);
+            Debug.Log("Testing git");
         }
     }
 }
