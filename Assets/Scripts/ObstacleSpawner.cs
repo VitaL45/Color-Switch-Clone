@@ -44,7 +44,6 @@ public class ObstacleSpawner : MonoBehaviour
         {
             Vector3 ccPos = new Vector3(0f, spawnNextY + 4f, 0f);
             Instantiate(colorChangerPrefab, ccPos, Quaternion.identity);
-            Debug.Log("Test");
         }
     }
 }
