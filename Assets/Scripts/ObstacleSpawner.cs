@@ -15,7 +15,6 @@ public class ObstacleSpawner : MonoBehaviour
         {
             SpawnNext();
             spawnNextY += spawnInterval;
-            Debug.Log(BallColor.score);
         }
     }
 

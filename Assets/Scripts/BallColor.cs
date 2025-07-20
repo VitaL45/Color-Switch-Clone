@@ -50,7 +50,7 @@ public class BallColor : MonoBehaviour
             Debug.Log("Game Over");
             // TODO: Restart game or show game over UI
             Time.timeScale = 0f;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("MainMenu");
         }
         if (other.tag == "ColorChanger")
         {
@@ -67,7 +67,6 @@ public class BallColor : MonoBehaviour
             score++;
             scoreText.text = score.ToString();
             Destroy(other.gameObject);
-            Debug.Log("Testing git");
         }
     }
 }
