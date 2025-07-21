@@ -5,13 +5,13 @@ public class ObstacleSpawner : MonoBehaviour
     public GameObject[] obstaclePrefabs;
     public GameObject colorChangerPrefab;
     public GameObject starPrefab;
-    public float spawnInterval = 8f;
-    public float spawnNextY = 16f;
+    public float spawnInterval = 5f;
+    public float spawnNextY = 10f;
     public Transform ball;
 
     void Update()
     {
-        if (ball.position.y + 16f > spawnNextY)
+        if (ball.position.y + 10f > spawnNextY)
         {
             SpawnNext();
             spawnNextY += spawnInterval;
@@ -39,10 +39,9 @@ public class ObstacleSpawner : MonoBehaviour
         }
 
         // Color Changer
-        if (BallColor.score % 2 == 0 && BallColor.score != 0)
-        {
-            Vector3 ccPos = new Vector3(0f, spawnNextY + 4f, 0f);
-            Instantiate(colorChangerPrefab, ccPos, Quaternion.identity);
-        }
+        float verticalSpacingAboveObstacle = 3f;
+        Vector3 ccPos = new Vector3(0f, spawnPos.y + verticalSpacingAboveObstacle, 0f);
+
+        Instantiate(colorChangerPrefab, ccPos, Quaternion.identity);
     }
 }

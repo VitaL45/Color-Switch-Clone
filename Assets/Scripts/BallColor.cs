@@ -47,8 +47,6 @@ public class BallColor : MonoBehaviour
     {
         if (other.tag != currentColor && other.tag != "ColorChanger" && other.tag != "Star")
         {
-            Debug.Log("Game Over");
-            // TODO: Restart game or show game over UI
             Time.timeScale = 0f;
             SceneManager.LoadScene("MainMenu");
         }
