@@ -38,5 +38,11 @@
 *.zip    binary
 *.unitypackage binary
 
+# Ignore ShaderLab (.shader) and HLSL (.cginc, .hlsl) from language stats
+*.shader linguist-vendored
+*.cginc linguist-vendored
+*.hlsl linguist-vendored
+
+
 # Ignore Unity's generated VSCode settings
 .vscode/* linguist-vendored
